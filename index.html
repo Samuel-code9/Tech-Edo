@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>touredo — Discover Edo State</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar"></header>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Find your next stay in Edo State</h1>
+      <p>Attractions, hotels, and events — search, book, and pay, all in one place.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="category-pills" id="category-pills">
+      <button class="pill active" data-category="">All</button>
+      <button class="pill" data-category="nature">Nature</button>
+      <button class="pill" data-category="culture">Culture</button>
+      <button class="pill" data-category="history">History</button>
+      <button class="pill" data-category="adventure">Adventure</button>
+      <button class="pill" data-category="entertainment">Entertainment</button>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="container">
+      <h2 style="font-size:20px;">Explore attractions</h2>
+      <div id="results"><div class="loading">Loading...</div></div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — touredo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar"></header>
+  <div class="page">
+    <div class="container">
+      <h1 style="font-size:22px;">Admin dashboard</h1>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="attractions">Attractions</button>
+        <button class="tab-btn" data-tab="hotels">Hotels</button>
+        <button class="tab-btn" data-tab="events">Events</button>
+        <button class="tab-btn" data-tab="users">Users</button>
+      </div>
+      <div id="tab-attractions"></div>
+      <div id="tab-hotels" style="display:none;"></div>
+      <div id="tab-events" style="display:none;"></div>
+      <div id="tab-users" style="display:none;"></div>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>
